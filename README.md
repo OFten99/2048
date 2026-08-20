@@ -16,6 +16,7 @@ Tkinter库提供了简单的图形界面支持，便于实现游戏的可视化�
 
 窗口构建与布局：创建300×300窗口，居中放置游戏网格框架，界面简洁美观。使用Grid布局，标签间距为2像素，排列整齐，用户体验良好。
 <img width="514" height="145" alt="image" src="https://github.com/user-attachments/assets/d136a7e9-cec4-4fca-b909-e7c17df0483b" />
+
 初始状态生成：随机在两个位置生成初始数字2，保证游戏开始时有合理的布局。初始状态的随机性增加了游戏的趣味性和不确定性。
 <img width="514" height="145" alt="image" src="https://github.com/user-attachments/assets/305567ea-4c2b-4561-bcf3-ef09263ecbc3" />
 
