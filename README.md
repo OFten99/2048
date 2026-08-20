@@ -1,4 +1,3 @@
-<img width="910" height="131" alt="image" src="https://github.com/user-attachments/assets/88b19469-faf8-498b-b0c0-ae89240cc497" /># 2048
 一个2048小游戏代码
 
 
@@ -13,32 +12,45 @@ Tkinter库提供了简单的图形界面支持，便于实现游戏的可视化�
 
 核心功能模块
 数据结构设计：使用6×6二维数组place，边缘用- 1表示边框，中间4×4区域为可操作空间，结构清晰。数组初始化简单高效，易于扩展和修改。
+<img width="310" height="167" alt="image" src="https://github.com/user-attachments/assets/91cb8cd4-886f-4541-9f95-6d4af4a61efc" />
 窗口构建与布局：创建300×300窗口，居中放置游戏网格框架，界面简洁美观。使用Grid布局，标签间距为2像素，排列整齐，用户体验良好。
+<img width="514" height="145" alt="image" src="https://github.com/user-attachments/assets/d136a7e9-cec4-4fca-b909-e7c17df0483b" />
 初始状态生成：随机在两个位置生成初始数字2，保证游戏开始时有合理的布局。初始状态的随机性增加了游戏的趣味性和不确定性。
+<img width="514" height="145" alt="image" src="https://github.com/user-attachments/assets/305567ea-4c2b-4561-bcf3-ef09263ecbc3" />
 
 图形界面更新
 动态渲染机制：根据place数组的值动态生成不同样式的Label，实现界面的实时更新。不同数字对应不同背景色和字体样式，增强视觉效果。
 样式细节处理：灰色边框、浅棕色空单元格、米黄色背景等颜色搭配合理，界面美观。加粗字体突出显示数字，便于玩家观察和操作。
 布局管理优化：使用Grid布局，标签间距为2像素，排列整齐，界面布局合理。动态调整标签大小，适应不同数字的显示需求。
+<img width="843" height="245" alt="image" src="https://github.com/user-attachments/assets/0a7d0649-e10e-4f91-8d0e-24b96c8a94f7" />
+
 移动处理逻辑
 方向检测与响应：响应W/A/S/D或方向键事件，实现上下左右移动功能。方向键绑定简洁明了，玩家操作方便快捷。
 移动与合并规则：向上移动时，从下到上遍历，优先移动上方空位，相同数字合并。向下移动时，从上到下遍历，优先填充下方空位，逻辑清晰。
 三重循环实现：每个方向最多处理3次移动/合并操作，确保移动效果完整。三重循环结构简单，易于理解和实现。
+<img width="419" height="350" alt="image" src="https://github.com/user-attachments/assets/daf31368-6495-4d14-91f2-8f94709fc4c4" />
 
 新数字生成机制
 条件触发与随机性：仅在发生有效移动后生成新数字，避免无意义的数字生成。在空白单元格中随机选择位置，保证游戏的随机性和公平性。
 概率分布设计：90%生成2，10%生成4，符合经典2048游戏的概率设定。概率分布合理，增加了游戏的策略性和挑战性。
 随机算法优化：使用Python的随机函数生成新数字，算法简单高效。确保新数字生成在空白单元格中，避免重复生成。
+<img width="910" height="131" alt="image" src="https://github.com/user-attachments/assets/ed53a702-96aa-45f5-843a-41cf2dec2c83" />
 
 胜负判定逻辑
 胜利条件判定：任意位置出现2048即弹出胜利提示，判定逻辑简单明确。胜利条件符合游戏目标，易于玩家理解和接受。
 失败条件判定：所有单元格非空时判定失败，但未检测可合并状态，存在缺陷。失败条件判定逻辑需要进一步优化，以提高游戏的准确性。
 弹窗功能实现：通过show_message显示结果，提供重启/退出选项，用户体验良好。弹窗功能增强了游戏的交互性，使玩家能够方便地进行下一步操作。
+<img width="449" height="86" alt="image" src="https://github.com/user-attachments/assets/2639db0b-f5b7-4962-ad36-67acd55b257e" />
+<img width="753" height="156" alt="image" src="https://github.com/user-attachments/assets/1eb3c37a-d668-48d6-a2f3-44aa4df9f5d2" />
+
 
 游戏重置功能
 状态还原与初始化：重置place数组到初始状态，恢复游戏的初始布局。状态还原功能确保游戏能够重新开始，不影响后续游戏体验。
 重新生成初始数字：在新位置生成两个初始数字2，保证游戏的随机性和不确定性。重新生成初始数字功能使游戏每次开始都有不同的布局。
 重置逻辑优化：重置逻辑简单高效，易于实现和维护。重置功能为玩家提供了重新开始的机会，增强了游戏的可玩性。
+<img width="618" height="216" alt="image" src="https://github.com/user-attachments/assets/555e0560-5aa9-4690-b1e6-90cd563cf60c" />
+<img width="612" height="148" alt="image" src="https://github.com/user-attachments/assets/936ad91e-352f-4c0f-9e7c-596fcc3a2da2" />
+
 
 算法设计特点
 分层处理策略：每个方向执行3轮移动/合并操作，分层处理确保移动效果完整。分层处理策略简单易懂，易于实现和优化。
