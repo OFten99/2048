@@ -12,7 +12,8 @@ Tkinter库提供了简单的图形界面支持，便于实现游戏的可视化�
 
 核心功能模块
 数据结构设计：使用6×6二维数组place，边缘用- 1表示边框，中间4×4区域为可操作空间，结构清晰。数组初始化简单高效，易于扩展和修改。
-<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/91cb8cd4-886f-4541-9f95-6d4af4a61efc" />
+<img width="310" height="104" alt="image" src="https://github.com/user-attachments/assets/91cb8cd4-886f-4541-9f95-6d4af4a61efc" />
+
 窗口构建与布局：创建300×300窗口，居中放置游戏网格框架，界面简洁美观。使用Grid布局，标签间距为2像素，排列整齐，用户体验良好。
 <img width="514" height="145" alt="image" src="https://github.com/user-attachments/assets/d136a7e9-cec4-4fca-b909-e7c17df0483b" />
 初始状态生成：随机在两个位置生成初始数字2，保证游戏开始时有合理的布局。初始状态的随机性增加了游戏的趣味性和不确定性。
